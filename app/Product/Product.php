@@ -15,6 +15,7 @@ class Product
     public const MIN_ALLOWED_TITLE_LENGTH = 50;
 
     public function __construct(
+        public ProductId $productId,
         public  string $title,
         public  int $price,
         public  int $quantity,
@@ -80,5 +81,10 @@ class Product
     public function soldOut():void
     {
         $this->changeQuantity(0);
+    }
+
+    public function price():int
+    {
+        return $this->price;
     }
 }
