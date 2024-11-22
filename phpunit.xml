@@ -33,10 +33,9 @@
         includeUncoveredFiles="true"
         pathCoverage="true"
         ignoreDeprecatedCodeUnits="true"
-        disableCodeCoverageIgnore="true"
-    >
-        <report >
-            <html outputDirectory="html-coverage"/>
-        </report>
+        disableCodeCoverageIgnore="true">
+<!--        <report >-->
+<!--            <html outputDirectory="html-coverage"/>-->
+<!--        </report>-->
     </coverage>
 </phpunit>
