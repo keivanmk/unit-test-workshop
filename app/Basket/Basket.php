@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 
 class Basket
 {
-    public const PRODUCT_NOT_FOUND_ERR_MESSAGE = "محصول مورد نظر یافت نشد.";
+    public const string PRODUCT_NOT_FOUND_ERR_MESSAGE = "محصول مورد نظر یافت نشد.";
 
     private Collection $items;
 

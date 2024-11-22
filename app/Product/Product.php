@@ -4,15 +4,15 @@ namespace App\Product;
 
 class Product
 {
-    public const  INVALID_PRICE_MESSAGE = "قیمت محصول نمی تواند کمتر از صفر باشد";
+    public const  string INVALID_PRICE_MESSAGE = "قیمت محصول نمی تواند کمتر از صفر باشد";
 
-    public const  INVALID_QUANTITY_MESSAGE = "موجودی محصول نمی تواند کمتر از صفر باشد";
+    public const  string INVALID_QUANTITY_MESSAGE = "موجودی محصول نمی تواند کمتر از صفر باشد";
 
-    public const INVALID_TITLE_MESSAGE = "عنوان محصول نمی تواند خالی باشد";
+    public const string INVALID_TITLE_MESSAGE = "عنوان محصول نمی تواند خالی باشد";
 
-    public const INVALID_TITLE_LENGTH_MESSAGE = "عنوان محصول نمی تواند کوچکتر از 50 کاراکتر باشد";
+    public const string INVALID_TITLE_LENGTH_MESSAGE = "عنوان محصول نمی تواند کوچکتر از 50 کاراکتر باشد";
 
-    public const MIN_ALLOWED_TITLE_LENGTH = 50;
+    public const int MIN_ALLOWED_TITLE_LENGTH = 50;
 
     public function __construct(
         public ProductId $productId,
