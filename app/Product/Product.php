@@ -85,6 +85,15 @@ class Product
 
     public function price():int
     {
+//        if(env('testing'))
+//        {
+//            return 100;
+//        }
         return $this->price;
     }
+
+//    public function result(): float|int
+//    {
+//        return $this->price * 10;
+//    }
 }

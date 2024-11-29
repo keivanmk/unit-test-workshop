@@ -15,6 +15,14 @@ class ProductTest extends TestCase
 
     use WithFaker;
 
+    public function setUp(): void
+    {
+        parent::setUp();
+//        $this->loadCSVFile();
+//        $this->loadUserFixture();
+
+    }
+
     /** @test */
     public function define_a_product(): void
     {
@@ -69,7 +77,7 @@ class ProductTest extends TestCase
      * @test
      * @dataProvider priceList
      */
-    public function changing_price(int $newPrice): void
+    public function changing_product_details(int $newPrice): void
     {
         //arrange
         $sut = ProductBuilder::aProduct()->build();
@@ -80,7 +88,11 @@ class ProductTest extends TestCase
         $sut->changePrice($newPrice);
 
         //assert
-        $this->assertEquals($newPrice,$sut->price);
+        $this->assertEquals($newPrice,$sut->price,"قیمت نهایی با قیمت مورد انتظار تفاوت ندارد");
+
+//        $sut->changeTitle("some title");
+//
+//        $this->assertEquals();
 
     }
 
